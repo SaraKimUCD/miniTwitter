@@ -1,0 +1,238 @@
+/*
+    Document   : home.css
+    Created on : Oct 29, 2018
+    Author     : Sara Kim & Phi Huynh
+*/
+
+body 
+{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #1DA1F2;
+}   
+main 
+{
+    width: 1000px;
+    margin: 40px 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+}
+
+/********** Left Dashboard for Profile, tweet count, trends **********/
+homeLeft {
+    width: 200px;
+    height: 800px;
+}
+
+#profileInfo
+{
+  width: 100%;
+  height: 150px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  
+}
+#profileName 
+{
+   font-weight: bold;
+   font-size: 16px;
+}
+#profileUsername
+{
+    font-style: italic;
+}
+
+img
+{
+    border: 2px solid white;
+    
+}
+#tweetCount
+{
+  color: white;
+}
+
+    
+#trends {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    border: 2px solid transparent;
+    border-radius: 6px;
+}  
+    
+/********** Contains posted tweets and tweet poster **********/
+homeMiddle
+{   
+    width: 550px;
+}
+
+profileMiddle
+{   
+    width: 550px;
+    background-color: white;
+}
+.post 
+{
+    padding: 5px;
+    margin: auto;
+    display: block;
+    width: 80%;
+    height: 58px;
+    background-color: white;
+    border: 2px solid transparent;
+    border-radius: 6px;
+}
+.tweetButton 
+{
+  border: 2px solid transparent;
+  border-radius: 6px;
+  background: #1DA1F2;
+  color: white;
+  font-size: 100%;
+  opacity: 0.7;
+  height:55px;
+  padding: 4px 0;
+
+  transition: 0.25s;
+  display: inline;
+  width: 55px;
+  margin: 0 auto;
+}
+.tweetButton:hover 
+{
+  opacity: 1;
+}
+#insidePost
+{
+  display: flex;
+  align-content:center;
+}
+textarea 
+{
+    resize:none;
+    word-break: break-word;
+    height: 50px;
+    width: 400px;
+    border: 1px solid transparent;
+}
+
+/* Contains posted tweets */
+article
+{
+    padding: 5px;
+    margin: auto;
+    display: block;
+    width: 80%;
+    height: 50px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+articleW
+{
+    padding: 5px;
+    margin: auto;
+    display: block;
+    width: 80%;
+    border: 1px solid transparent;
+    background-color: white;
+}
+    
+homeRight
+{
+
+    width: 290px;
+}
+    
+    .followWho
+    {
+        padding: 5px;
+        width: 100%;
+        height: 220px;
+        margin-bottom: 10px;
+        background-color: white;
+        border: 2px solid transparent;
+        border-radius: 6px;
+    }
+    
+    .rightBottom 
+	{
+        padding: 5px;
+        width: 100%;
+        height: 130px;
+        background-color: white;
+        border: 2px solid transparent;
+        border-radius: 6px;
+    }
+    
+    
+/* Submit button style */
+.deleteButton {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: red; 
+    font-size: 14px;
+    float: right;
+    text-decoration: none;
+    
+    /*width: 6em;*/
+    
+    cursor: pointer;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+/* Make shadow for submit button */
+.deleteButton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+/* Submit button style */
+.unfollow, .follow{
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: #1DA1F2; 
+    font-size: 14px;
+    /*width: 6em;*/
+    
+    cursor: pointer;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+/* Make shadow for submit button */
+.unfollow:hover, .follow:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#tweetDate {
+    float:right;
+    color: skyblue;
+}
+#tweetEmail {
+    color: skyblue;
+}
+
+#tweetText {
+    color: #1DA1F2;
+}
+
+.mention {
+    color: blue;
+}
+
+
+.trendsitem, .content
+{
+    background-color: white;
+        border: 1px solid transparent;
+}
+
